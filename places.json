@@ -1,0 +1,74 @@
+{
+    "places": [
+        {
+            "name": "Victoria Memorial, Kolkata",
+            "displayname": "Victoria Memorial",
+            "lat": 22.544823,
+            "lng": 88.342557,
+            "type": "Architecture"
+        },
+        {
+            "name": "Howrah Bridge",
+            "displayname": "Howrah Bridge",
+            "lat": 22.585137,
+            "lng": 88.346772,
+            "type": "Architecture"
+        },
+        {
+            "name": "Indian Museum",
+            "displayname": "Indian Museum",
+            "lat": 22.557884,
+            "lng": 88.351126,
+            "type": "Architecture"
+        },
+        {
+            "name": "Belur Math",
+            "displayname": "Belur Math",
+            "lat": 22.632551,
+            "lng": 88.356412, 
+            "type": "Shrine"
+        },
+        {
+            "name": "Maidan (Kolkata)",
+            "displayname": "Maidan",
+            "lat": 22.551276,
+            "lng": 88.345162,
+            "type": "Park"
+        },
+        {
+            "name": "Kalighat Kali Temple",
+            "displayname": "Kalighat Kali Temple",
+            "lat": 22.520246,
+            "lng": 88.342084,
+            "type": "Shrine"
+        },
+        {
+            "name": "Eden Gardens",
+            "displayname": "Eden Gardens",
+            "lat": 22.564628,
+            "lng": 88.343232,
+            "type": "Park"
+        },
+        {
+            "name": "Alipore Zoological Gardens",
+            "displayname": "Alipore Zoo",
+            "lat": 22.536111,
+            "lng": 88.333296,
+            "type": "Park"
+        },
+        {
+            "name": "New Town Eco Park",
+            "displayname": "Eco Park",
+            "lat": 22.595371,
+            "lng": 88.470369,
+            "type": "Park"
+        },
+        {
+            "name": "St. Paul's Cathedral, Kolkata",
+            "displayname": "St. Paul's Cathedral",
+            "lat": 22.544244,
+            "lng": 88.346678,
+            "type": "Shrine"
+        }
+    ]
+}

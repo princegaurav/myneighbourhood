@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Kolkata [Neighbourhood Project]</title>
+        <meta name="description" content="Udacity Neighbourhood Project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Site or Application content -->
+        <div class="container rel">
+        	<header class="row">
+        		<div class="col-xs-12 col-sm-3">
+                    <img src="img/HB-white.png" alt="Kolkata img" class="siteicon"/>
+                </div>
+        		<div class="col-xs-12 col-sm-9">
+        			<p class="headline">Kolkata - City of Joy</p>
+        			<div class="input-container">
+          			<input type="text" placeholder="What do you want to visit in my neighbourhood?"
+                               data-bind="value: inputSearchFilter, valueUpdate: 'afterkeydown'"/>
+                        <select class="dropdown" data-bind="options: dropdownOptions,
+                                                            value: selectedDDValue"></select>
+  </div>
+        		</div>
+        	</header>
+        	<main class="row">
+        		<section class="sidebar col-xs-12 col-sm-4 col-md-3">
+        			<p class="sidebar-heading">Places of Interest</p>
+        			<ul class="place-list" data-bind="foreach: filteredPlaces">
+        				<li>
+                            <a href="#" data-bind="text: displayname, click: $root.showMarker"></a>
+                        </li>
+        			</ul>
+        		</section>
+        		<section id="map" class="map col-xs-12 col-sm-8 col-md-9">
+        			<p>Map Area</p>
+        		</section>
+        	</main>
+        	<footer class="row">Udacity - My Neighbourhood Project - &copy; Gaurav Singh</footer>
+  </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js'></script>
+        <script src="js/main.js"></script>
+        <script async defer
+      	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1i1r9koPHBBFCHrvIMYYU4rGrWBFgkMM&callback=initMap"
+            onerror="errorLoadingMap()">
+      </script>
+    </body>
+</html>

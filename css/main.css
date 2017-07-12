@@ -1,0 +1,307 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ========================================================================== */
+/* Author's custom styles                                                     */
+/* ========================================================================== */
+/*
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+*/
+/* ========================================================================== */
+/* These are mobile styles. A mobile first approach is taken                  */
+/* ========================================================================== */
+
+/* Base styles */
+html,
+body {
+    color: #f7f9f9;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.1;
+}
+
+/* Style for header */
+header {
+    background-color: #26a69a;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Icon image not displayed for mobile */
+.siteicon {
+    display: none;
+}
+
+/* Headline or caption line style */
+.headline {
+    font-size: 2em;
+    padding: 10px 0 0 0;
+}
+
+/* Input box styles */
+.input-container {
+    padding: 5px 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Input text box styles */
+input[type="text"] {
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    color: #26a69a;
+    font-size: 1em;
+    box-shadow: none;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-bottom: solid 2px #969696;
+}
+
+/* Dropdown styles */
+.dropdown {
+    color: #26a69a;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    box-shadow: none;
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    padding: 5px;
+    transition: border 0.3s;
+}
+
+.dropdown:focus {
+    outline: none;
+    border-bottom: solid 2px #969696;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #186860;
+}
+
+.sidebar-heading {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* List styles */
+.place-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.place-list > li {
+    list-style: none;
+    border-radius: 25px;
+    background-color: #26a69a;
+    margin: 5px auto;
+    padding: 10px 5px;
+    text-align: center;
+    width: 60%;
+    max-width: 12em;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.place-list > li:hover {
+    background-color: #2bbbad;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a {
+    color: #f7f9f9;
+}
+
+a:hover,
+a:focus {
+    color: #f7f9f9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Map styles */
+.map {
+    background-color: #aed581;
+    height: 37em;
+}
+
+/* Info box styles */
+.infodata {
+    color: black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 0;
+    margin: 0;
+    max-width: 300px;
+}
+
+.info-head {
+    font-size: 1.3em;
+    margin-top: 5px;
+    width: 100%;
+    padding: 3px 0;
+    border-bottom: 1px solid black;
+    letter-spacing: 0.06em;
+}
+
+.info-img {
+    width: 100%;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.info-source {
+    font-size: 0.7em;
+}
+
+.info-brief {
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding: 0;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+footer {
+    background-color: #26a69a;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .siteicon {
+        width: 90%;
+        padding-top: 3em;
+        display: block;
+    }
+
+    .sidebar {
+        min-height: 37em;
+    }
+
+    .place-list > li {
+        width: 80%;
+    }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .siteicon {
+        padding-top: 2em;
+    }
+
+    input[type="text"] {
+        width: 75%;
+    }
+}
